@@ -8,12 +8,18 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Schema(description = "사용자 개별 정보 DTO")
+@Schema(
+    description = "사용자 개별 정보 DTO",
+    example = """
+         { 
+            "email": "UserDetailDto@example.com",
+            "job": "UserDetailDto개발자"    
+        }
+    """
+)
 public class UserDetailDto {
 
-    @Schema(description = "사용자 이메일", example = "UserDetailDto@example.com")
     private String email;
 
-    @Schema(description = "사용자 직업", example = "UserDetailDto개발자")
     private String job;
 }
