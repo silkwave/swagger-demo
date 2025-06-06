@@ -25,18 +25,6 @@ public class UserController {
                 schema = @Schema(implementation = UserDto.class),
                 examples = {
                     @ExampleObject(
-                        name = "기본 정보 예제",
-                        summary = "이름과 나이만 포함된 간단한 회원가입 정보",
-                        value = """
-                            {
-                              "common": {
-                                "name": "홍길동",
-                                "age": 30
-                              }
-                            }
-                            """
-                    ),
-                    @ExampleObject(
                         name = "상세 정보 예제",
                         summary = "기본 정보에 이메일, 직업 등 상세 정보가 포함된 예제",
                         value = """
