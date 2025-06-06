@@ -1,4 +1,3 @@
-// CommonDto.java
 package com.example.swagger_demo.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;

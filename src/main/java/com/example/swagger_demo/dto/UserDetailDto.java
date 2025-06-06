@@ -11,9 +11,9 @@ import lombok.*;
 @Schema(description = "사용자 개별 정보 DTO")
 public class UserDetailDto {
 
-    @Schema(description = "사용자 이메일", example = "hong@example.com")
+    @Schema(description = "사용자 이메일", example = "UserDetailDto@example.com")
     private String email;
 
-    @Schema(description = "사용자 직업", example = "개발자")
+    @Schema(description = "사용자 직업", example = "UserDetailDto개발자")
     private String job;
 }
